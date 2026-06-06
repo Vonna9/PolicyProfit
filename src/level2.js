@@ -1,14 +1,14 @@
 import './style.css'
 import Phaser from 'phaser' 
 
-class MainMenu extends Phaser.Scene {
+export default class Level2 extends Phaser.Scene {
   constructor() {
-    super({key: "level2"})
+    super('level2');
   }
   preload () {
-    this.load.image('Bank_Level_2', 'assets/Bank_Level_2.jpg');
+    this.load.image('Bank_Level_2', '/assets/Bank_Level_2.jpg');
   }
   create() {
-    this.add.image(800, 600, 'Bank_Level_2');
+    this.add.image(400, 300,'Bank_Level_2');
   }
 }

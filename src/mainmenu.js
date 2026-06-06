@@ -1,18 +1,15 @@
 import './style.css'
 import Phaser from 'phaser' 
 
-class MainMenu extends Phaser.Scene {
+export default class MainMenu extends Phaser.Scene {
   constructor() {
-    super({key: "mainmenu"})
+    super("themainmenu");
   }
   preload () {
-    this.load.image('Main Menu', 'assets/MainMenu.png');
+    this.load.image('Main Menu', '/assets/MainMenu.png');
   }
   create() {
-    this.add.image(800, 600, 'Main Menu');
-    this.scene.start();
+    this.add.image(400,300, 'Main Menu');
   }
-  update() {
-    
-  }
+ 
 }
