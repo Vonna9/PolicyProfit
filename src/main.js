@@ -8,13 +8,15 @@ import Gameover1 from './gameover1.js'
 import Gameover2 from './gameover2.js'
 import Gameover3 from './gameover3.js'
 import Winner from './winscreen.js'
+import HUDscene from './HUDscene.js'
+
 
 const config = {
   type: Phaser.WEBGL, 
   width: 800,
   height: 600, 
   canvas: gameCanvas,
-  scene:[MainMenu, Level1, Level2, Level3, Gameover1, Gameover2, Gameover3, Winner],
+  scene:[MainMenu, Level1, Level2, Level3, HUDscene, Gameover1, Gameover2, Gameover3, Winner],
 };
 
 const game = new Phaser.Game(config);

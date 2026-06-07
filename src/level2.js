@@ -1,5 +1,6 @@
 import './style.css'
 import Phaser from 'phaser' 
+import HUDscene from './HUDscene.js'
 
 export default class Level2 extends Phaser.Scene {
   constructor() {

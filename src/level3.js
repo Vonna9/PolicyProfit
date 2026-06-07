@@ -1,5 +1,6 @@
 import './style.css'
 import Phaser from 'phaser' 
+import HUDscene from './HUDscene.js'
 
 export default class Level3 extends Phaser.Scene {
   constructor() {
@@ -9,6 +10,6 @@ export default class Level3 extends Phaser.Scene {
     this.load.image('Bank_Level_3', '/assets/Bank_Level_3.jpg');
   }
   create() {
-    this.add.image(400, 300, 'Bank_Level_3');
+    this.add.image(400, 300,'Bank_Level_3');
   }
 }
