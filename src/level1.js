@@ -14,11 +14,16 @@ export default class Level1 extends Phaser.Scene {
     //current issues
     this.load.image('risingInflation', '/assets/Current_Issue_Rising_Inflation.png');
     this.load.image('risingDeflation', '/assets/Current_Issue_Rising_Deflation.png');
-    this.load.image('risingDeflation', '/assets/Current_Issue_Expensive.jpg');
     //choice cards:
-    //rising inflation card
-    this.load.image('currentissueInflation', '/assets/Current_Issue_Rising_Inflation.png');
+    //rising inflation choices
+    this.load.image('saleday', '/assets/Current_Issue_Rising_Inflation.png');
+    
     this.load.image('currentissueDeflation', '/assets/Current_Issue_Rising_Deflation.png');
+
+    //rising deflation card
+    this.load.image('reduce funding', '/assets/Current_Issue_Rising_Inflation.png');
+    this.load.image('currentissueDeflation', '/assets/Current_Issue_Rising_Deflation.png');
+
     //questions
     this.load.image('Q_RisingDeflation', '/assets/Question_Rising_Deflation.jpg');
     this.load.image('Q_RisingInflation', '/assets/Question_Issue_Rising_Inflation.jpg');
@@ -29,10 +34,9 @@ export default class Level1 extends Phaser.Scene {
     this.add.image(400, 300,'Bank_Level_1');
     this.add.image(400, 200, 'Q_RisingDeflation');
     this.add.image(400, 200, 'Q_RisingInflation');
-    this.add.image();
-    this.add.image();
-    this.add.image();
-    this.add.image();
+    this.add.image(400, 100, 'currentissueInflation');
+    this.add.image(400, 100, 'currentissueDeflation');
+
     this.sound.play('level1music', {
       volume: 0.3,
       loop: true
