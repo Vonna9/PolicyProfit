@@ -11,12 +11,13 @@ export default class MainMenu extends Phaser.Scene {
     this.load.audio("buttonClick", '/assets/buttonPress.wav');
   }
   create() {
+    
     this.add.image(400,300, 'Main Menu');
     
     let startButton = this.add.image(415, 450, 'Start Button');
     startButton.setInteractive().on("pointerdown", () => {
-    this.input.on('pointerdown', () => this.scene.switch('level1'));
     this.sound.play('buttonClick');
+    this.scene.switch('level1');
        });
    }
 }
