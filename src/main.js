@@ -15,7 +15,7 @@ const config = {
   type: Phaser.WEBGL, 
   width: 800,
   height: 600, 
-  canvas: gameCanvas,
+  canvas: gameCanvas, 
   scene:[MainMenu, Level1, Level2, Level3, HUDscene, Gameover1, Gameover2, Gameover3, Winner],
 };
 
